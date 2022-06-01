@@ -1,0 +1,21 @@
+
+#ulMain {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#liMain {
+    float: left;
+}
+
+header {
+    display: block;
+    background-color: #d789a8;
+}
+.header-bg {
+    height: 405px;
+    text-align: center;
+}
