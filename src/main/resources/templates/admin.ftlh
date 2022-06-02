@@ -47,7 +47,7 @@
                 <#if user.active>true <#else> false</#if>
             </th>
             <th>
-                <#list user.roles as role>${role}</#list>
+                <#list user.roles as role>${role}&nbsp;</#list>
             </th>
             <th class="table-danger">
                 <form action = "/admin/user/ban/${user.id}" method="post">

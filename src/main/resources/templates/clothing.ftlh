@@ -113,8 +113,8 @@
                         <div class="carousel-item active" data-bs-interval="10000">
                             <img src="/static/img/carusel1.jpg" class="d-block w-100" alt="Номер 1">
                             <div class="carousel-caption d-none d-md-block">
-                                <h4>Коко Шанель</h4>
-                                <h5>«Люди увлекаются не модой, а теми немногими, кто ее создает»&copy</h5>
+                                <h4><b>Коко Шанель</b></h4>
+                                <h5><b>«Люди увлекаются не модой, а теми немногими, кто ее создает»&copy</b></h5>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
