@@ -21,36 +21,36 @@
     </head>
 
     <body>
-    <h1 align="center"><b><i>FASHION POLICE</i></b></h1>
-    <hr>
-    <p class=mode>Модно, стильно, молодёжно!</p>
+        <h1 align="center"><b><i>FASHION POLICE</i></b></h1>
+        <hr>
+        <p class=mode>Модно, стильно, молодёжно!</p>
 
-    <h4 align="center">Редактирование роли пользователя "${user.name}"</h4>
-    <br>
+        <h4 align="center">Редактирование роли пользователя "${user.name}"</h4>
+        <br>
 
-    <form action = "/admin/user/edit" method = "post">
-        <table class="table table-borderless" id="tableP">
-            <#list roles as role>
+        <form action = "/admin/user/edit" method = "post">
+            <table class="table table-borderless" id="tableP">
+                <#list roles as role>
+                    <tr>
+                        <th scope="col">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type = "checkbox" name = "${role}" ${user.roles?seq_contains(role)?string("checked", "")}>${role}
+                                </label>
+                            </div>
+                        </th>
+                    </tr>
+                </#list>
                 <tr>
-                    <th scope="col">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type = "checkbox" name = "${role}" ${user.roles?seq_contains(role)?string("checked", "")}>${role}
-                            </label>
-                        </div>
-                    </th>
+                    <td>
+                        <input type = "hidden" value = "${user.id}" name = "userId">
+                        <input type = "hidden" value = "${_csrf.token}" name = "_csrf">
+
+                        <button type = "submit" class="btn btn-danger">Сохранить</button>
+                    </td>
                 </tr>
-            </#list>
-            <tr>
-                <td>
-                    <input type = "hidden" value = "${user.id}" name = "userId">
-                    <input type = "hidden" value = "${_csrf.token}" name = "_csrf">
+            </table>
 
-                    <button type = "submit" class="btn btn-danger">Сохранить</button>
-                </td>
-            </tr>
-        </table>
-
-    </form>
+        </form>
     </body>
 </html>
