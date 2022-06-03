@@ -40,7 +40,7 @@
 <header>
     <nav class="navbar fixed-top" style="background-color: #fde3e9;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">FASHION POLICE</a>
+            <img src="/static/img/logo.png" width="40"><a class="navbar-brand" href="/"><i>FASHION POLICE</i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -280,7 +280,7 @@
         </td>
     </tr>
     <tr>
-        <td id=footer><p style="font-size: 13.5pt;" id=copy>&copyВареца М.С. Пашинский А.И. 2022</p></td>
+        <td id=footer valign="middle"><p style="font-size: 13.5pt;" id=copy>&copyВареца М.С. Пашинский А.И. 2022</p></td>
     </tr>
 </table>
 

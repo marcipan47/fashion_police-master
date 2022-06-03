@@ -219,7 +219,7 @@
             <table class="text">
                 <tr>
                     <td align=center><p>&copyВареца М.С. Пашинский А.И. 2022</p>
-                        <p align=center><a href=/poli.ftlh>Политика конфиденциальности</a></p>
+                        <p align=center><a href=/poli>Политика конфиденциальности</a></p>
                     </td>
                 </tr>
             </table>

@@ -149,6 +149,7 @@
             <table>
                 <tr>
                     <td id=content valign=top>
+                        <p class=mode>Будь самым модным на районе!</p>
 
                         <h3 align=center>О нашей сфере деятельности, нашем сайте и наших разработках</h3><br>
 
