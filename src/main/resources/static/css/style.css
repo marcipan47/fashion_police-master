@@ -39,3 +39,6 @@ header {display:block; background-color:#d789a8;}
 table.text {width:  100%; border-spacing: 0; /* Расстояние между ячейками */}
 table.text tr td {width: 58%; /* Ширина ячеек */}
 td.rightcol {text-align: right;}
+
+#whiteColor {text-shadow:black 1px 1px 0, black -1px -1px 0,
+                         black -1px 1px 0, black 1px -1px 0;}

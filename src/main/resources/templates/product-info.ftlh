@@ -17,7 +17,7 @@
 <header>
     <nav class="navbar fixed-top" style="background-color: #fde3e9;">
         <div class="container-fluid">
-            <img src="/static/img/logo.png" width="40"><a class="navbar-brand" href="/"><i>FASHION POLICE</i></a>
+            <img src="/static/img/title.png" width="40"><a class="navbar-brand" href="/"><i>FASHION POLICE</i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -170,7 +170,15 @@
                             </tr>
                             <tr>
                                 <td><b>Цвет: </b></td>
-                                <td><b style = "color: ${product.color}">${product.color}</b></td>
+                                <#if product.color == "white">
+                                    <td><b style = "color: ${product.color};
+                                                            text-shadow:black 1px 1px 0, black -1px -1px 0,
+                                                            black -1px 1px 0, black 1px -1px 0">
+                                            ${product.color}</b>
+                                    </td>
+                                <#else>
+                                    <td><b style = "color: ${product.color}">${product.color}</b></td>
+                                </#if>
                             </tr>
                             <tr>
                                 <td><b>Автор: </b></td>
