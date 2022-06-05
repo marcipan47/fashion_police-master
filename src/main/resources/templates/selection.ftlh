@@ -106,40 +106,40 @@
             <tr>
                 <td>
                     <aside>
-                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="/static/img/modeSentence.png" class="d-block w-100" alt="Номер 1" id=imgS>
+                                    <img src="/static/img/carusel/valentino_2022%20(1).png" class="d-block w-100" alt="Номер 1">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <h4><b id="caruselText">Valentino 2022</b></h4>
+                                        <h5><b id="caruselText">Коллекция «Pretty in Pink» на Неделе моды в Париже</b></h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="/static/img/modeSentence.png" class="d-block w-100" alt="Номер 2" id=imgS>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="/static/img/carusel/valentino_2022%20(2).png" class="d-block w-100" alt="Номер 2">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
+                                        <h4><b id="caruselText">Valentino 2022</b></h4>
+                                        <h5><b id="caruselText">Коллекция «Pretty in Pink» на Неделе моды в Париже</b></h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="/static/img/modeSentence.png" class="d-block w-100" alt="Номер 3" id=imgS>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="/static/img/carusel/valentino_2022%20(3).png" class="d-block w-100" alt="Номер 3">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
+                                        <h4><b id="caruselText">Valentino 2022</b></h4>
+                                        <h5><b id="caruselText">Коллекция «Pretty in Pink» на Неделе моды в Париже</b></h5>
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -241,42 +241,38 @@
             </tr>
 
             <tr align="center">
-                <td colspan="2">
+                <td colspan="2" valign="middle">
                     <br>
                     <#if hat?? && gloves??>
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${hat.title}</div>
                                     <a href="/product/${hat.id}"><img src="/images/${hat.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${gloves.title}</div>
                                     <a href="/product/${gloves.id}"><img src="/images/${gloves.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
                     <#elseif hat??>
                     <div class="row row-cols-1 row-cols-md-1 g-4">
                         <div class="col-sm-4">
-                            <div class="card h-60" style="width: 18rem; ">
+                            <div class="card h-80" style="width: 18rem; ">
                                 <div class="card-header"><b>${hat.title}</div>
                                 <a href="/product/${hat.id}"><img src="/images/${hat.image.id}" class="card-img-top"></a>
-                                <div class="card-body"></div>
                             </div>
                         </div>
                     </div><br>
                     <#elseif gloves??>
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${gloves.title}</div>
                                     <a href="/product/${gloves.id}"><img src="/images/${gloves.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
@@ -284,105 +280,93 @@
                     <#if top?? && outerwear?? && scarf??>
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col-sm-4">
-                            <div class="card h-60" style="width: 18rem; ">
+                            <div class="card h-80" style="width: 18rem; ">
                                 <div class="card-header"><b>${scarf.title}</div>
                                 <a href="/product/${scarf.id}"><img src="/images/${scarf.image.id}" class="card-img-top"></a>
-                                <div class="card-body"></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card h-60" style="width: 18rem; ">
+                            <div class="card h-80" style="width: 18rem; ">
                                 <div class="card-header"><b>${top.title}</div>
                                 <a href="/product/${top.id}"><img src="/images/${top.image.id}" class="card-img-top"></a>
-                                <div class="card-body"></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card h-60" style="width: 18rem; ">
+                            <div class="card h-80" style="width: 18rem; ">
                                 <div class="card-header"><b>${outerwear.title}</div>
                                 <a href="/product/${outerwear.id}"><img src="/images/${outerwear.image.id}" class="card-img-top"></a>
-                                <div class="card-body"></div>
                             </div>
                         </div>
                     </div><br>
                     <#elseif outerwear?? && scarf??>
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${outerwear.title}</div>
                                     <a href="/product/${outerwear.id}"><img src="/images/${outerwear.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${scarf.title}</div>
                                     <a href="/product/${scarf.id}"><img src="/images/${scarf.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
                     <#elseif top?? && scarf??>
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${top.title}</div>
                                     <a href="/product/${top.id}"><img src="/images/${top.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${scarf.title}</div>
                                     <a href="/product/${scarf.id}"><img src="/images/${scarf.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
                     <#elseif outerwear?? && top??>
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${outerwear.title}</div>
                                     <a href="/product/${outerwear.id}"><img src="/images/${outerwear.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${top.title}</div>
                                     <a href="/product/${top.id}"><img src="/images/${top.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
                     <#elseif outerwear??>
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${outerwear.title}</div>
                                     <a href="/product/${outerwear.id}"><img src="/images/${outerwear.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
                     <#elseif scarf??>
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${scarf.title}</div>
                                     <a href="/product/${scarf.id}"><img src="/images/${scarf.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
                     <#elseif top??>
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${top.title}</div>
                                     <a href="/product/${top.id}"><img src="/images/${top.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
@@ -401,10 +385,9 @@
                     <#if pants??>
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${pants.title}</div>
                                     <a href="/product/${pants.id}"><img src="/images/${pants.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div><br>
                         </div>
@@ -423,10 +406,9 @@
                     <#if shoes??>
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col-sm-4">
-                                <div class="card h-60" style="width: 18rem; ">
+                                <div class="card h-80" style="width: 18rem; ">
                                     <div class="card-header"><b>${shoes.title}</div>
                                     <a href="/product/${shoes.id}"><img src="/images/${shoes.image.id}" class="card-img-top"></a>
-                                    <div class="card-body"></div>
                                 </div>
                             </div>
                         </div><br>
@@ -441,7 +423,7 @@
                                 </div>
                             </div>
                         </div><br>
-                    </#if><br>
+                    </#if>
                 </td>
             </tr>
             <tr>

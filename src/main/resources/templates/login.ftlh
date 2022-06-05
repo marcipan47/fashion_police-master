@@ -20,7 +20,7 @@
 
 
 <body>
-<h1 align="center"><i>FASHION POLICE</i></h1><hr>
+<h1 align="center"><b><i>FASHION POLICE</i></b></h1><hr>
 <p class=mode>Модно, стильно, молодёжно!</p>
 <#if user.email??>
 <table align="center">

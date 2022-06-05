@@ -109,24 +109,24 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="/static/img/modeSentence.png" class="d-block w-100" alt="Номер 1" id=imgS>
+                                    <img src="/static/img/carusel/louis-vuitton_2022%20(1).png" class="d-block w-100" alt="Номер 1">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <h4><b id="caruselText">Louis Vuitton 2022</b></h4>
+                                        <h5><b id="caruselText">Показ коллекции «Cruise» Николя Жескьера в Калифонии</b></h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="/static/img/modeSentence.png" class="d-block w-100" alt="Номер 2" id=imgS>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="/static/img/carusel/louis-vuitton_2022%20(2).png" class="d-block w-100" alt="Номер 2">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
+                                        <h4><b id="caruselText">Louis Vuitton 2022</b></h4>
+                                        <h5><b id="caruselText">Показ коллекции «Cruise» Николя Жескьера в Калифонии</b></h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="/static/img/modeSentence.png" class="d-block w-100" alt="Номер 3" id=imgS>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <img src="/static/img/carusel/louis-vuitton_2022%20(3).png" class="d-block w-100" alt="Номер 3">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
+                                        <h4><b id="caruselText">Louis Vuitton 2022</b></h4>
+                                        <h5><b id="caruselText">Показ коллекции «Cruise» Николя Жескьера в Калифонии</b></h5>
                                     </div>
                                 </div>
                             </div>
@@ -181,30 +181,30 @@
                                 <p>В мире существует огромное множество <u>стилистических направлений</u>, среди которых выделяют основные.
                                     <br>Традиционные стили – это <i>классический, повседневный, спортивный и ретро-стиль</i>. Правда, сегодня в чистом виде каждый стиль встречается не так часто. Мода отличается смешением элементов разных стилей, обращается к ассоциациям, передает настроение. Классификация стилей в одежде практически полностью универсальна как для женщин, так и для мужчин, разница в элементах отображения стиля.</p>
 
-                                <a target="_blank" href='/static/img/business.jpg'>
-                                    <img src='/static/img/business.jpg' alt="Business" class=imgL>
+                                <a target="_blank" href='/static/img/styles/business.jpg'>
+                                    <img src='/static/img/styles/business.jpg' alt="Business" class=imgL>
                                 </a>
                                 <p><b>Деловой или классический стиль</b> характеризуется сдержанностью и лаконичностью, высоким качеством и некой базовостью. Одежда данного стиля особенно хороша для преподавателей и офисных работников, научных конференций и совещаний.
                                     <br>Классический стиль не приемлет внедрения скоротечных трендов, таких как чокер, кроп-топ, рюши и т.д., а также ярких цветов и вызывающих принтов. Черный, серый, бежевый, темно-синий – вот гамма данного стилистического направления. Простой крой и простота деталей, стабильность и умеренная скромность.
                                     <br>Пожалуй, классический стиль – это некая основа и база, он был таким 50 лет назад, сейчас и останется, спустя десятилетия. Это стиль вне времени и моды.</p>
 
-                                <a target="_blank" href='/static/img/casual.jpg'>
-                                    <img src='/static/img/casual.jpg' alt="Casual" class=imgR>
+                                <a target="_blank" href='/static/img/styles/casual.jpg'>
+                                    <img src='/static/img/styles/casual.jpg' alt="Casual" class=imgR>
                                 </a>
                                 <br>
                                 <p><b>Кэжуал (casual)</b>, пожалуй, одно из самых популярных стилистических направлений среди большинства модниц со всего мира. Не зря же в переводе он звучит, как «повседневный».
                                     <br>Что он из себя представляет? Во-первых, это всегда комфорт и удобство, приятные ткани, не сковывающие фасоны, некая мягкость и гибкость. Ключевыми элементами среди одежды являются: джинсы, рубашки, футболки, свитера, джемпера и толстовки, кроссовки, незамысловатые удобные туфли, балетки и т.д. Такой стиль иногда еще называют американским: именно так в будни ходят голливудские звезды, которых часто снимают папарацци.
                                     <br>Что же касается цветовой гаммы, то она намного разнообразнее, чем в вышеупомянутом классическом стиле, однако яркие неоновые цвета так же неуместны, в отличие от благородного синего, травянисто-зелёного, горчично-желтого и т.д.</p>
 
-                                <a target="_blank" href='/static/img/sport.jpg'>
-                                    <img src='/static/img/sport.jpg' alt="Sport" class=imgL>
+                                <a target="_blank" href='/static/img/styles/sport.jpg'>
+                                    <img src='/static/img/styles/sport.jpg' alt="Sport" class=imgL>
                                 </a>
                                 <p><b>Спортивный стиль</b> включает в себя спортивные элементы, но никак не одежду для занятий спортом. Толстовки, майки, футболки, мешковатые штаны, прогулочные кроссовки, кеды, кепки и рюкзаки – вот база данного стилистического направления.
                                     <br>Спортивный стиль удобен и комфортен, данная одежда не сковывает движений и не обтягивает фигуру, он создан для активных людей, любящий движение и приключения.
                                     <br>Вполне уместны в нём будут довольно-таки яркие цвета, но в меру, к примеру, вставки на толстовке, или полосы на кроссовках. Украшения же, в свою очередь, стоит выбирать минималистичные и маленькие по размеру, хотя, по возможности, лучше и вовсе отказаться от них, отдавая предпочтение тем же спортивным часам – и аксессуар, и польза, чтоб не опаздывать).</p>
 
-                                <a target="_blank" href='/static/img/retro.jpg'>
-                                    <img src='/static/img/retro.jpg' alt="Retro" class=imgR>
+                                <a target="_blank" href='/static/img/styles/retro.jpg'>
+                                    <img src='/static/img/styles/retro.jpg' alt="Retro" class=imgR>
                                 </a>
                                 <p>Чаще всего <b>ретро-стиль</b> предпочитают творческие люди и любители женственности, пышных юбок, рубашек, заправленных в юбку с высокой талией, беретов, твидовых и шерстяных тканей, всего того, что было модно десятилетия назад. Ретро, как и классика, не терпит трендов и неоновых цветов, излишней откровенности и смелости.
                                     <br>Отличным дополнением к образу в стиле ретро всегда будут черные стрелки на глазах и алые губы.</p>

@@ -38,7 +38,7 @@
 <header>
     <nav class="navbar fixed-top" style="background-color: #fde3e9;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">FASHION POLICE</a>
+            <img src="/static/img/logo.png" width="40"><a class="navbar-brand" href="/"><i>FASHION POLICE</i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -99,61 +99,46 @@
 <table align=center id=table>
     <tr>
         <td>
-
-            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <aside>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="/static/img/carusel/versace_2022%20(1).png" class="d-block w-100" alt="Номер 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4><b id="caruselText">Versace 2022</b></h4>
+                                <h5><b id="caruselText">Показ мод «Ready to wear» осень-зима</b></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="/static/img/carusel/versace_2022%20(2).png" class="d-block w-100" alt="Номер 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4><b id="caruselText">Versace 2022</b></h4>
+                                <h5><b id="caruselText">Показ мод «Ready to wear» осень-зима</b></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="/static/img/carusel/versace_2022%20(3).png" class="d-block w-100" alt="Номер 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4><b id="caruselText">Versace 2022</b></h4>
+                                <h5><b id="caruselText">Показ мод «Ready to wear» осень-зима</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="/static/img/number1.jpg" class="d-block w-100" alt="Номер 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 id="caruselText">First slide label</h5>
-                            <p id="caruselText">Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="/static/img/number2.jpg" class="d-block w-100" alt="Номер 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 id="caruselText">Second slide label</h5>
-                            <p id="caruselText">Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/img/number3.jpg" class="d-block w-100" alt="Номер 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 id="caruselText">Third slide label</h5>
-                            <p id="caruselText">Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/img/number4.jpg" class="d-block w-100" alt="Номер 4">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 id="caruselText"> slide label</h5>
-                            <p id="caruselText">Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/img/number5.jpg" class="d-block w-100" alt="Номер 5">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 id="caruselText"> slide label</h5>
-                            <p id="caruselText">Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            </aside>
         </td>
     </tr>
 
@@ -170,7 +155,7 @@
                         <img id="imgInfo" src="/images/${product.image.id}"/><br><br>
                     </td>
 
-                    <td align="center" width="640px">
+                    <td align="center" width="640px" style="font-size: 15pt">
                         <table align="center">
                             <tr>
                                 <td><b>Название: </b></td>
@@ -206,7 +191,7 @@
                             </tr>
                             <tr>
                                 <td><b>Цвет: </b></td>
-                                <td><b style = "color: ${product.color}"> </b></td>
+                                <td><b style = "color: ${product.color}">${product.color}</b></td>
                             </tr>
                             <tr>
                                 <td><b>Автор: </b></td>

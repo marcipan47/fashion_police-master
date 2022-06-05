@@ -14,7 +14,7 @@
             #footer {text-align:center; color:#777777; border-top:2px solid #888888;}
 
             body {background-image:url('/static/img/background.jpg'); font-family:Verdana, sans-serif;}
-            aside {background: #fde3e9; width: 1280px;}
+
 
             #table {background-color:#FFFFFF; border:3px solid #888888; width:1280px;}
 
@@ -103,40 +103,40 @@
             <tr>
                 <td>
                     <aside>
-                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="/static/img/carusel1.jpg" class="d-block w-100" alt="Номер 1">
+                                    <img src="/static/img/carusel/fendi_2022%20(1).png" class="d-block w-100" alt="Номер 1">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h4><b>Коко Шанель</b></h4>
-                                        <h5><b>«Люди увлекаются не модой, а теми немногими, кто ее создает»&copy</b></h5>
+                                        <h4><b id="caruselText">Fendi 2022</b></h4>
+                                        <h5><b id="caruselText">Коллекция «Couture» весна-лето</b></h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="/static/img/carusel2.jpg" class="d-block w-100" alt="Номер 2">
+                                    <img src="/static/img/carusel/fendi_2022%20(2).png" class="d-block w-100" alt="Номер 2">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h4>Коко Шанель</h4>
-                                        <h5>«Люди увлекаются не модой, а теми немногими, кто ее создает»&copy</h5>
+                                        <h4><b id="caruselText">Fendi 2022</b></h4>
+                                        <h5><b id="caruselText">Коллекция «Couture» весна-лето</b></h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="10000">
-                                    <img src="/static/img/carusel3.jpg" class="d-block w-100" alt="Номер 3">
+                                    <img src="/static/img/carusel/fendi_2022%20(3).png" class="d-block w-100" alt="Номер 3">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h4>Коко Шанель</h4>
-                                        <h5>«Люди увлекаются не модой, а теми немногими, кто ее создает»&copy</h5>
+                                        <h4><b id="caruselText">Fendi 2022</b></h4>
+                                        <h5><b id="caruselText">Коллекция «Couture» весна-лето</b></h5>
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>

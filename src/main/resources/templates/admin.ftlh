@@ -28,7 +28,7 @@
         <br>
         <table class="table table-bordered table-striped table-light">
             <thead>
-            <tr>
+            <tr style="font-size:14pt">
                 <th scope="col">Email</th>
                 <th scope="col">Номер телефона</th>
                 <th scope="col">Активность</th>
