@@ -9,18 +9,12 @@
         <link rel="shortcut icon" href="/static/img/title.png" type="image/x-icon">
 
         <style>
-            h1 {font-size: 18.5pt;}
-            h2 {font-size: 16.85pt;}
-
             body {font-family:Verdana, sans-serif;}
-
-            .mode {text-align:center; color:#C71585; font-size:14.5pt; font-weight: bold;}
         </style>
     </head>
 
-
     <body>
-        <h1 align="center"><b><i>FASHION POLICE</i></b></h1><hr>
+        <h2 align="center"><b><i>FASHION POLICE</i></b></h2><hr>
         <p class=mode>Модно, стильно, молодёжно!</p>
 
         <h3 align="center">Регистрация</h3>

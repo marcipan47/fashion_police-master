@@ -9,18 +9,13 @@
         <link rel="shortcut icon" href="/static/img/title.png" type="image/x-icon">
 
         <style>
-            h1 {font-size: 18.5pt;}
-            h2 {font-size: 16.85pt;}
-
             body {font-family:Verdana, sans-serif;}
-
-            .mode {text-align:center; color:#C71585; font-size:14.5pt; font-weight: bold;}
         </style>
     </head>
 
 
     <body>
-        <h1 align="center"><b><i>FASHION POLICE</i></b></h1>
+        <h2 align="center"><b><i>FASHION POLICE</i></b></h2>
         <hr>
         <p class=mode>Модно, стильно, молодёжно!</p>
 
@@ -43,14 +38,14 @@
             <#list users as user>
                 <tr>
                     <th>${user.email}</th>
-                    <th>${user.phone_number}</th>
-                    <th>
+                    <td>${user.phone_number}</td>
+                    <td>
                         <#if user.active>true <#else> false</#if>
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <#list user.roles as role>${role}&nbsp;</#list>
-                    </th>
-                    <th class="table-danger">
+                    </td>
+                    <td class="table-danger">
                         <form action = "/admin/user/ban/${user.id}" method="post">
                             <input type = "hidden" name ="_csrf" value = "${_csrf.token}">
                             <#if user.active>
@@ -59,9 +54,9 @@
                                 <input type = "submit" value = "Разбан">
                             </#if>
                         </form>
-                    </th>
-                    <th><a href="/admin/user/edit/${user.id}">Изменить роль</a></th>
-                    <th><a href = "/user/${user.id}">${user.name}</a> </th>
+                    </td>
+                    <td><a href="/admin/user/edit/${user.id}">Изменить роль</a></td>
+                    <td><a href = "/user/${user.id}">${user.name}</a> </td>
                 </tr>
             <#else>
                 <h3>Пользователей нет</h3>

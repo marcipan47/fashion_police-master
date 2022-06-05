@@ -9,28 +9,7 @@
     <link rel="shortcut icon" href="/static/img/title.png" type="image/x-icon">
 
     <style>
-        h1 {font-size: 18.5pt;}
-        h2 {font-size: 16.85pt;}
-        #footer {text-align:center; color:#777777; border-top:2px solid #888888;}
-
-        #imgInfo {border: 5px solid pink; border-radius: 4px; max-width: 500px; max-height: 500px}
-
         body {background-image:url('/static/img/background.jpg'); font-family:Verdana, sans-serif;}
-        aside {background: #fde3e9; width: 1280px;}
-
-        #table {background-color:#FFFFFF; border:3px solid #888888; width:1280px;}
-
-        #content {font-family:Verdana, sans-serif; text-align:justify; padding:15px;}
-
-        .mode {text-align:center; color:#C71585; font-size:14.5pt; font-weight: bold;}
-
-        #imgS {margin-left:30px; margin-right:30px;}
-        .imgM {float:right; margin-left:15px; border:2px solid #ddd; border-radius:15px; padding:5px; width:600px;}
-        .imgL {float:left; margin-right:15px; border:1px solid #ddd; border-radius:10px; padding:5px; width:250px;}
-        .imgR {float:right; margin-left:15px; border:1px solid #ddd; border-radius:10px; padding:5px; width:250px;}
-
-        table.text {width:  100%; border-spacing: 0; /* Расстояние между ячейками */}
-        table.text tr td {width: 58%; /* Ширина ячеек */}
     </style>
 </head>
 

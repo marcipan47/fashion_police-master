@@ -9,14 +9,7 @@
         <link rel="shortcut icon" href="/static/img/title.png" type="image/x-icon">
 
         <style>
-            h1 {font-size: 18.5pt;}
-            h2 {font-size: 16.85pt;}
-
             body {font-family:Verdana, sans-serif;}
-
-            .mode {text-align:center; color:#C71585; font-size:14.5pt; font-weight: bold;}
-
-            #tableP {margin-left: 15px;}
         </style>
     </head>
 
