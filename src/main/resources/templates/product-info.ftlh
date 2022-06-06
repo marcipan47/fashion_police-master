@@ -141,7 +141,7 @@
                                 <td>${product.title}</td>
                             </tr>
                             <tr>
-                                <td><b>Описание: </b></td>
+                                <td valign="top"><b>Описание: </b></td>
                                 <td>${product.description}</td>
                             </tr>
                             <tr>
