@@ -230,6 +230,8 @@
                         <tr>
                             <td align="center">
                                 <h4 align="center">Создание новой одежды</h4>
+                                <br>
+
                                 <form action="/product/create" method="post" enctype = "multipart/form-data">
                                     <table align="center">
                                         <tr>
@@ -359,6 +361,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center" colspan="2">
+                                                <br>
                                                 <input type = "hidden" name = "_csrf" value = "${_csrf.token}">
                                                 <input type="submit" class="btn btn-primary" value="Добавить"/>
                                             </td>
