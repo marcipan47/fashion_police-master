@@ -36,7 +36,6 @@ public class ProductService {
             }
             return res;
         }
-        ;
         return productRepository.findAll();
     }
 
@@ -46,26 +45,26 @@ public class ProductService {
 
             if (type.equals("Головной убор")) {
                 if (weather_int <= 0) {
-                    return selectionService.hatWeatherLess0(sex, color,style, type);
+                    return selectionService.scarfOrHatOrGlovesWeatherLess0(sex, color,style, type);
                 }
                 if (weather_int >= 1 && weather_int <= 7) {
-                    return selectionService.hatWeatherBetween1And7(sex, color,style, type);
+                    return selectionService.scarfOrHatOrGlovesWeatherBetween1And14Or7(sex, color,style, type);
                 }
             }
             if (type.equals("Шарф")) {
                 if (weather_int <= 0) {
-                    return selectionService.scarfWeatherLess0(sex, color,style, type);
+                    return selectionService.scarfOrHatOrGlovesWeatherLess0(sex, color,style, type);
                 }
                 if (weather_int >= 1 && weather_int <= 14) {
-                    return selectionService.scarfWeatherBetween1And14(sex, color,style, type);
+                    return selectionService.scarfOrHatOrGlovesWeatherBetween1And14Or7(sex, color,style, type);
                 }
             }
             if (type.equals("Перчатки")) {
                 if (weather_int <= 0) {
-                    return selectionService.glovesWeatherLess0(sex, color,style, type);
+                    return selectionService.scarfOrHatOrGlovesWeatherLess0(sex, color,style, type);
                 }
                 if (weather_int >= 1 && weather_int <= 7) {
-                    return selectionService.glovesWeatherBetween1And7(sex, color,style, type);
+                    return selectionService.scarfOrHatOrGlovesWeatherBetween1And14Or7(sex, color,style, type);
                 }
             }
             if (type.equals("Верхняя одежда")) {
@@ -195,36 +194,10 @@ public class ProductService {
         return productRepository.findById(id).orElse(null);
     }
 
-    public Product complementAnOutfit(String sex, String collection, String color, String style, String type){
-        ArrayList<String> complementColors = FashionPoliceApplication.colorstab.get(color);
-        for (String newColor : complementColors) {
-            Product complementedOutfit = productRepository.findFirstBySexAndCollectionAndTypeAndStyleAndColor(sex, collection, type, style, newColor);
-            if (complementedOutfit != null) {
-                return complementedOutfit;
-            }
-        }
-        return null;
-    }
-
-    public Product complementAnOutfitWithName(ArrayList<String> names, String sex, String collection, String color, String style, String type){
-        ArrayList<String> complementColors = FashionPoliceApplication.colorstab.get(color);
-        for (String newColor : complementColors) {
-            Product complementedOutfit = productRepository.findFirstBySexAndCollectionAndTypeAndStyleAndColor(sex, collection, type, style, newColor);
-            if (complementedOutfit != null) {
-                for (String name: names) {
-                    if ((complementedOutfit.getTitle().toLowerCase()).contains(name.toLowerCase())) {
-                        return complementedOutfit;
-                    }
-                }
-            }
-        }
-        return null;
-    }
-
     public static String get_colour_name(ArrayList<Integer> a) {
         Map<String, ArrayList<Integer>> mincolors = new HashMap<>();
-        for (String key : FashionPoliceApplication.outfitcolors.keySet()) {
-            ArrayList<Integer> rgb = FashionPoliceApplication.outfitcolors.get(key);
+        for (String key : ColorService.outfitcolors.keySet()) {
+            ArrayList<Integer> rgb = ColorService.outfitcolors.get(key);
             int rd = (rgb.get(0) - a.get(0))*(rgb.get(0) - a.get(0));
             int gd = (rgb.get(1) - a.get(1))*(rgb.get(1) - a.get(1));
             int bd = (rgb.get(2) - a.get(2))*(rgb.get(2) - a.get(2));
@@ -292,10 +265,8 @@ public class ProductService {
         int rgDiff = rgbArr[0] - rgbArr[1];
         int rbDiff = rgbArr[0] - rgbArr[2];
         int tolerance = 10;
-        if (rgDiff > tolerance || rgDiff < -tolerance) {
-            if (rbDiff > tolerance || rbDiff < -tolerance) {
-                return false;
-            }
+        if ((rgDiff > tolerance || rgDiff < -tolerance) && (rbDiff > tolerance || rbDiff < -tolerance)) {
+            return false;
         }
         if (rgbArr[0] + rgbArr[1] + rgbArr[2] <= 90) {
             return false;

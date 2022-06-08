@@ -20,42 +20,6 @@ public class SelectionService {
     final String AUTUMN = "Осень";
     final String DEMI_SEASON = "Деми-сезон";
 
-    public Product hatWeatherLess0(String sex, String color, String style, String type) {
-        Product product = complementAnOutfit(sex, "Зима", color, style, type);
-        if (product != null) {
-            return product;
-        } else {
-            product = complementAnOutfit(sex, "Зима", color, CASUAL, type);
-            if (product != null) {
-                return product;
-            } else {
-                product = complementAnOutfit(UNISEX, "Зима", color, CASUAL, type);
-                if (product != null) {
-                    return product;
-                } else {
-                    return null;
-                }
-            }
-        }
-    }
-    public Product hatWeatherBetween1And7(String sex, String color, String style, String type) {
-        Product product = complementAnOutfit(sex, AUTUMN, color, style, type);
-        if (product != null) {
-            return product;
-        } else {
-            product = complementAnOutfit(sex, AUTUMN, color, CASUAL, type);
-            if (product != null) {
-                return product;
-            } else {
-                product = complementAnOutfit(UNISEX, DEMI_SEASON, color, CASUAL, type);
-                if (product != null) {
-                    return product;
-                } else {
-                    return null;
-                }
-            }
-        }
-    }
     public Product outerwearWeatherLess20(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Пуховик", "Шуба"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -75,6 +39,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product outerwearWeatherBetween19And10(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Пуховик", "Шуба", "Дубленка"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -94,6 +59,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product outerwearWeatherBetween9And0(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Куртка", "Пуховик", "Дубленка"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -113,6 +79,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product outerwearWeatherBetween1And7(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Куртка", "Дубленка", "Пальто"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -161,8 +128,8 @@ public class SelectionService {
                 }
             }
         }
-
     }
+
     public Product outerwearWeatherBetween15And18(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Кожанка", "Кожаная куртка", "Джинсовка", "Джинсовая куртка", "Куртка", "Пальто", "Жакет", "Пиджак", "Блейзер"));
         Product product = complementAnOutfitWithName(outfits, sex, AUTUMN, color, style, type);
@@ -212,6 +179,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product topWeatherBetween9And0(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Свитер", "Водолазка", "Джемпер", "Платье"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -236,6 +204,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product topWeatherBetween1And7(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Свитер", "Водолазка", "Джемпер", "Платье", "Толстовка", "Рубашка", "Блузка", "Кофта"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -290,6 +259,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product topWeatherBetween15And18(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("толстовка", "топ", "футболка", "майка", "платье", "рубашка", "блузка", "сарафан"));
         Product product = complementAnOutfitWithName(outfits, sex, "Лето", color, style, type);
@@ -319,6 +289,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product topWeatherBetween19And25(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("топ", "футболка", "майка", "платье", "рубашка", "блузка", "сарафан"));
         Product product = complementAnOutfitWithName(outfits, sex, "Лето", color, style, type);
@@ -348,6 +319,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product topWeatherMore26(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("топ", "футболка", "майка", "платье", "сарафан"));
         Product product = complementAnOutfitWithName(outfits, sex, "Лето", color, style, type);
@@ -402,6 +374,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product pantsWeatherBetween9And0(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Штаны", "Джинсы", "Юбка"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -426,6 +399,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product pantsWeatherBetween1And7(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Штаны", "Джинсы", "Юбка", "Брюки"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -480,6 +454,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product pantsWeatherBetween15And18(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Штаны", "Джинсы", "Юбка", "Брюки"));
         Product product = complementAnOutfitWithName(outfits, sex, AUTUMN, color, style, type);
@@ -509,6 +484,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product pantsWeatherBetween19And25(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Штаны", "Джинсы", "Юбка", "Брюки", "Шорты"));
         Product product = complementAnOutfitWithName(outfits, sex, "Лето", color, style, type);
@@ -533,6 +509,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product pantsWeatherMore26(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Штаны", "Юбка", "Брюки", "Шорты"));
         Product product = complementAnOutfitWithName(outfits, sex, "Лето", color, style, type);
@@ -582,6 +559,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product shoesWeatherBetween19And0(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Ботинки", "Сапоги"));
         Product product = complementAnOutfitWithName(outfits, sex, "Зима", color, style, type);
@@ -606,6 +584,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product shoesWeatherBetween1And7(String sex, String color, String style, String type) {
         Product product = complementAnOutfit(sex, "Зима", color, style, type);
         if (product != null) {
@@ -653,6 +632,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product shoesWeatherBetween19And25(String sex, String color, String style, String type) {
         Product product = complementAnOutfit(sex, "Лето", color, style, type);
         if (product != null) {
@@ -671,6 +651,7 @@ public class SelectionService {
             }
         }
     }
+
     public Product shoesWeatherMore26(String sex, String color, String style, String type) {
         ArrayList<String> outfits = new ArrayList<>(Arrays.asList("Босоножки", "Сандалии"));
         Product product = complementAnOutfitWithName(outfits, sex, "Лето", color, style, type);
@@ -696,7 +677,7 @@ public class SelectionService {
         }
     }
 
-    public Product scarfWeatherLess0(String sex, String color, String style, String type) {
+    public Product scarfOrHatOrGlovesWeatherLess0(String sex, String color, String style, String type) {
         Product product = complementAnOutfit(sex, "Зима", color, style, type);
         if (product != null) {
             return product;
@@ -714,43 +695,8 @@ public class SelectionService {
             }
         }
     }
-    public Product scarfWeatherBetween1And14(String sex, String color, String style, String type) {
-        Product product = complementAnOutfit(sex, AUTUMN, color, style, type);
-        if (product != null) {
-            return product;
-        } else {
-            product = complementAnOutfit(sex, AUTUMN, color, CASUAL, type);
-            if (product != null) {
-                return product;
-            } else {
-                product = complementAnOutfit(UNISEX, DEMI_SEASON, color, CASUAL, type);
-                if (product != null) {
-                    return product;
-                } else {
-                    return null;
-                }
-            }
-        }
-    }
-    public Product glovesWeatherLess0(String sex, String color, String style, String type) {
-        Product product = complementAnOutfit(sex, "Зима", color, style, type);
-        if (product != null) {
-            return product;
-        } else {
-            product = complementAnOutfit(sex, "Зима", color, CASUAL, type);
-            if (product != null) {
-                return product;
-            } else {
-                product = complementAnOutfit(UNISEX, "Зима", color, CASUAL, type);
-                if (product != null) {
-                    return product;
-                } else {
-                    return null;
-                }
-            }
-        }
-    }
-    public Product glovesWeatherBetween1And7(String sex, String color, String style, String type) {
+
+    public Product scarfOrHatOrGlovesWeatherBetween1And14Or7(String sex, String color, String style, String type) {
         Product product = complementAnOutfit(sex, AUTUMN, color, style, type);
         if (product != null) {
             return product;
@@ -792,7 +738,7 @@ public class SelectionService {
     }
 
     public Product complementAnOutfit(String sex, String collection, String color, String style, String type){
-        ArrayList<String> complementColors = FashionPoliceApplication.colorstab.get(color);
+        ArrayList<String> complementColors = ColorService.colorstab.get(color);
         for (String newColor : complementColors) {
             Product complementedOutfit = productRepository.findFirstBySexAndCollectionAndTypeAndStyleAndColor(sex, collection, type, style, newColor);
             if (complementedOutfit != null) {
@@ -803,7 +749,7 @@ public class SelectionService {
     }
 
     public Product complementAnOutfitWithName(ArrayList<String> names, String sex, String collection, String color, String style, String type){
-        ArrayList<String> complementColors = FashionPoliceApplication.colorstab.get(color);
+        ArrayList<String> complementColors = ColorService.colorstab.get(color);
         for (String newColor : complementColors) {
             Product complementedOutfit = productRepository.findFirstBySexAndCollectionAndTypeAndStyleAndColor(sex, collection, type, style, newColor);
             if (complementedOutfit != null) {
