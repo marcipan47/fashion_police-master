@@ -626,7 +626,12 @@ public class SelectionService {
                     if (product != null) {
                         return product;
                     } else {
-                        return null;
+                        product = complementAnOutfit(UNISEX, DEMI_SEASON, color, CASUAL, type);
+                        if (product != null) {
+                            return product;
+                        } else {
+                            return null;
+                        }
                     }
                 }
             }
@@ -721,7 +726,7 @@ public class SelectionService {
             return product;
         }
         else {
-            product = complementAnOutfit(sex, collection, color,CASUAL, type);
+            product = complementAnOutfit(sex, collection, color, CASUAL, type);
             if (product != null) {
                 return product;
             }

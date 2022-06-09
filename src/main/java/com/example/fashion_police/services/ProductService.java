@@ -214,14 +214,15 @@ public class ProductService {
         }
         return minimum_color;
     }
+
     public static ArrayList<Integer> hexToRGB(String hexcolor) {
         int r = Color.decode(hexcolor).getRed();
         int g = Color.decode(hexcolor).getGreen();
         int b = Color.decode(hexcolor).getBlue();
         return new ArrayList<>(Arrays.asList(r,g,b));
     }
-    public static String getHexColor(BufferedImage image) {
 
+    public static String getHexColor(BufferedImage image) {
         Map<Integer, Integer> colorMap = new HashMap<>();
         int height = image.getHeight();
         int width = image.getWidth();
@@ -238,9 +239,9 @@ public class ProductService {
                 }
             }
         }
-
         return getMostCommonColor(colorMap);
     }
+
     private static String getMostCommonColor(Map<Integer, Integer> map) {
         List<Map.Entry<Integer, Integer>> list = new LinkedList<>(map.entrySet());
 
@@ -254,6 +255,7 @@ public class ProductService {
                 + Integer.toHexString(rgb[1])
                 + Integer.toHexString(rgb[2]);
     }
+
     private static int[] getRGBArr(int pixel) {
         int red = (pixel >> 16) & 0xff;
         int green = (pixel >> 8) & 0xff;
@@ -261,6 +263,7 @@ public class ProductService {
 
         return new int[]{red, green, blue};
     }
+
     private static boolean isGray(int[] rgbArr) {
         int rgDiff = rgbArr[0] - rgbArr[1];
         int rbDiff = rgbArr[0] - rgbArr[2];

@@ -9,11 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.security.Principal;
-import java.text.AttributedString;
 
 @Controller
 @RequiredArgsConstructor
@@ -31,7 +29,6 @@ public class UserController {
     public String registration() {
         return "registration";
     }
-
 
     @PostMapping("/registration")
     public String createUser(User user, Model model) throws IOException {

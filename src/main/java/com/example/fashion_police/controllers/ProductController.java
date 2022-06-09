@@ -51,7 +51,6 @@ public class ProductController {
         return "about";
     }
 
-
     @GetMapping("/selection/create")
     public String createNewLook(@RequestParam(name = "sex", required = false) String sex,
                                 @RequestParam(name = "color", required = false) String color,

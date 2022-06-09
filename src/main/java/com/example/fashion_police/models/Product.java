@@ -1,6 +1,5 @@
 package com.example.fashion_police.models;
 
-import com.example.fashion_police.FashionPoliceApplication;
 import com.example.fashion_police.services.ProductService;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,13 +7,11 @@ import lombok.NoArgsConstructor;
 
 import javax.imageio.ImageIO;
 import javax.persistence.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.*;
-import java.util.List;
 
 @Entity
 @Table(name = "items")
